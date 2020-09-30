@@ -1,0 +1,12 @@
+<mf-search></mf-search>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+                <mf-music *ngFor="let track of getMusics()" 
+                [artist]="track.artist" 
+                [music]="track.name"
+                [image]="track.image"></mf-music>
+        </div>
+    </div>
+</div>
